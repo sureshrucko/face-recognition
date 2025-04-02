@@ -24,14 +24,17 @@ source venv/bin/activate  # On Windows: .\venv\Scripts\activate
 
 
 Install dependencies
+
 pip install -r requirements.txt
 
 
 
 Create a .env file
+
 FLASK_ENV=development
 SECRET_KEY=your_secret_key
 
 
 Run the application
+
 python app.py
