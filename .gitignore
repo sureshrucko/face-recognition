@@ -1,23 +1,55 @@
-# .gitignore
+# Python Bytecode Files
+__pycache__/
+*.py[cod]
+*.pyo
 
-# Virtual environment
-venv/
-
-# Environment variables
+# Environment Variables
 .env
 
-# Python cache files
+# Virtual Environment
+venv/
+env/
+.venv/
+.pyvenv/
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Flask & Debugging
+instance/
+*.log
+
+# PyTorch Checkpoints and Models
+*.onnx
+*.pth
+*.pt
+
+# Jupyter Notebook Checkpoints
+.ipynb_checkpoints/
+
+# Python Packaging
+*.egg
+*.egg-info/
+dist/
+build/
+*.manifest
+*.spec
+
+# MacOS Files
+.DS_Store
+
+# Visual Studio Code
+.vscode/
+
+# PyCharm
+.idea/
+
+# Other IDE Configurations
+*.swp
+*~
+
+# Cache Files
 __pycache__/
 *.pyc
 
-# IDE / Editor settings
-.vscode/
-.idea/
-
-# Compiled files
-*.pyc
-*.pyo
-*.pyd
-
-# Logs
-*.log
+# Requirements Backup (Optional)
+requirements.txt.bak
